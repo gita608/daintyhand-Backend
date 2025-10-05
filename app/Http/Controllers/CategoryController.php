@@ -14,8 +14,6 @@ class CategoryController extends Controller
         return response()->json(['status' => 'true', 'data' => $categories, 'message' => 'Success']);
     }
 
-
-
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
